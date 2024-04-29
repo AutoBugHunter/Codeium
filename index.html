@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Accessibility Testing Tool Comparison</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    nav {
+      margin-bottom: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin-right: 10px;
+    }
+    main {
+      padding: 10px;
+    }
+    h1 {
+      color: #333;
+    }
+    input[type="text"] {
+      padding: 5px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 5px 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Browser Extensions</a></li>
+        <li><a href="#">Stand-alone API/Testing</a></li>
+        <li><a href="#">Engine Subscription API</a></li>
+        <li><a href="#">AIM Report</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Compare accessibility tools</h1>
+    <input type="text" id="urlInput" placeholder="Enter website URL">
+    <button id="checkButton">Check it</button>
+    
+    <section>
+      <h2>List of accessibility testing tools</h2>
+      <div class="tool">
+        <img src="wave.png" alt="Wave logo">
+        <h3>Wave</h3>
+      </div>
+      <div class="tool">
+        <img src="achecker.png" alt="Achecker logo">
+        <h3>Achecker</h3>
+      </div>
+      <div class="tool">
+        <img src="lighthouse.png" alt="Lighthouse logo">
+        <h3>Lighthouse</h3>
+      </div>
+    </section>
+    
+    <table id="resultTable">
+      <thead>
+        <tr>
+          <th>Accessible Check</th>
+          <th>Accessibility tool1</th>
+          <th>Accessibility tool2</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically generated -->
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    <p>Contact us | About | Terms of Use</p>
+    <p><a href="https://www.unt.edu/index.html">UNT</a></p>
+  </footer>
+  
+  <script>
+    // JavaScript code to handle button click and display results
+    const checkButton = document.getElementById("checkButton");
+    const urlInput = document.getElementById("urlInput");
+    const resultTable = document.getElementById("resultTable");
+    
+    checkButton.addEventListener("click", () => {
+      const url = urlInput.value;
+    })
+    </script>
+      
+      // Perform accessibility checks using the selected tools
